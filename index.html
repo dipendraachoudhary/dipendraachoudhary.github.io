@@ -3,127 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff QA Engineer | AI & Agentic Automation Architect</title>
+
+    <title>Dipendra Choudhary | Staff QA Engineer | AI Automation Architect</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Staff QA Engineer with 10+ years experience in automation, Playwright, Python, and AI-driven QA systems.">
+    <meta name="keywords" content="QA Engineer, SDET, Automation Testing, Playwright, Python, AI QA, CI/CD">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <nav class="glass-nav">
-        <div class="nav-content">
-            <span class="logo">AGENTIC_QA_LEAD</span>
-            <div class="links">
-                <a href="#agentic">Agentic QA</a>
-                <a href="#infra">Infra & DevOps</a>
-                <a href="#experience">Experience</a>
-                <a href="#stack">Technical Arsenal</a>
-            </div>
+<!-- NAV -->
+<nav class="glass-nav">
+    <div class="nav-content">
+        <span class="logo">AGENTIC_QA_LEAD</span>
+        <div class="links">
+            <a href="#agentic">Agentic QA</a>
+            <a href="#infra">Infra</a>
+            <a href="#experience">Experience</a>
+            <a href="#stack">Stack</a>
+            <a href="#projects">Projects</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <header class="hero">
-        <span class="eyebrow">Staff QA Engineer @ Bluecore</span>
-        <h1>Autonomous <span>Quality</span> <br>Engineering.</h1>
-        <p>10+ years of expertise. Architecting AI-driven agents that proactively manage failure trends, code coverage, and CI/CD stability at scale. Passionate about team mentorship and advocating for engineering excellence.</p>
-    </header>
+<!-- HERO -->
+<header class="hero">
+    <span class="eyebrow">Staff QA Engineer @ Bluecore</span>
 
-    <!-- Specialized Agentic QA Section -->
-    <section id="agentic" class="section-container bg-navy text-paper">
-        <h2 class="section-title text-accent">Agentic QA & n8n Orchestration</h2>
-        <div class="agent-grid">
-            <div class="agent-card">
-                <h3>Failure Trend Healing</h3>
-                <p>Engineered <strong>n8n workflows</strong> with <strong>Report Portal APIs</strong> to proactively identify frequent failure trends, automatically resolving bottlenecks via <strong>Cursor</strong>.</p>
-            </div>
-            <div class="agent-card">
-                <h3>Coverage Intelligence</h3>
-                <p>Automated <strong>Coveralls API</strong> tracking across dev repos. Built reporting agents for leadership to monitor code coverage fluctuations relative to new feature implementations.</p>
-            </div>
-            <div class="agent-card">
-                <h3>Claude Triage Agents</h3>
-                <p>Developed <strong>Claude</strong> agents for daily triage and debugging of deployment failures, fully integrated with <strong>Slack APIs</strong> for real-time test rerun updates.</p>
-            </div>
-            <div class="agent-card">
-                <h3>Cost & Token Optimization</h3>
-                <p>Strategically optimized LLM utilization by pivoting agentic workflows from <strong>Claude Sonnet to Haiku</strong>, drastically reducing operational costs while maintaining efficiency.</p>
-            </div>
+    <h1>
+        I build <span>AI-powered QA systems</span><br>
+        that detect and fix failures automatically.
+    </h1>
+
+    <p>
+        10+ years of experience designing automation, CI/CD pipelines, and agentic systems 
+        that improve reliability, reduce failures, and scale engineering teams.
+    </p>
+
+    <div class="hero-actions">
+        <a href="mailto:dipendra.choudhary047@gmail.com" class="cta-btn">Contact Me</a>
+        <a href="https://github.com/dipendraachoudhary" target="_blank" class="secondary-btn">GitHub</a>
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank" class="secondary-btn">LinkedIn</a>
+        <a href="resume.pdf" class="secondary-btn" download>Resume</a>
+    </div>
+</header>
+
+<!-- AGENTIC QA -->
+<section id="agentic" class="section-container bg-navy text-paper fade-in">
+    <h2 class="section-title text-accent">Agentic QA Systems</h2>
+
+    <div class="agent-grid">
+        <div class="agent-card">
+            <h3>Failure Trend Healing</h3>
+            <p>Automated detection of recurring failures using n8n + Report Portal APIs.</p>
         </div>
-    </section>
 
-    <!-- Infrastructure & CI/CD Innovation -->
-    <section id="infra" class="section-container">
-        <h2 class="section-title">Infrastructure & CI/CD Strategy</h2>
-        <div class="infra-grid">
-            <div class="infra-item">
-                <h4>Proactive Buildkite Integration</h4>
-                <p>Engineered agents to monitor <strong>Buildkite</strong> pipelines, fetching real-time failures from events during active job runs, and passing them for immediate local reruns to save deployment time.</p>
-            </div>
-            <div class="infra-item">
-                <h4>Argo Workflow Refactoring</h4>
-                <p>Utilized Claude to refactor dev repositories and <strong>Argo Workflows</strong>, specifically streamlining production cycles by stripping out redundant shadow-prod canary deployments.</p>
-            </div>
+        <div class="agent-card">
+            <h3>Coverage Intelligence</h3>
+            <p>Real-time tracking of coverage across repos using Coveralls API.</p>
         </div>
-    </section>
 
-    <!-- Professional Experience -->
-    <section id="experience" class="section-container bg-white">
-        <h2 class="section-title">Professional Narrative</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="time-header"><h3>Staff QA Engineer</h3><span class="company">Bluecore | 2022 – Present</span></div>
-                <ul class="exp-list">
-                    <li>Spearheading Python/Playwright automation and API testing (REST/gRPC) for complex monolith-to-microservices migrations.</li>
-                    <li>Managing high-scale GCP infrastructure validation (BigQuery, Spanner, Datastore, Firestore, Buckets).</li>
-                    <li>Deep domain expertise in MarTech ecosystems, digital marketing automation, and platforms like Insider One.</li>
-                </ul>
-            </div>
-            <div class="timeline-item">
-                <div class="time-header"><h3>Senior QA Lead</h3><span class="company">Paytm | 2017 – 2022</span></div>
-                <ul class="exp-list">
-                    <li>Led comprehensive functional and database verification for <strong>EDC (POS) machines</strong> and IoT payment systems.</li>
-                    <li>Architected automation for highly scalable Payment Gateways, NPCI/UPI integrations, and QR settlements.</li>
-                </ul>
-            </div>
-            <div class="timeline-item">
-                <div class="time-header"><h3>QA Engineer</h3><span class="company">Aon Hewitt | 2014 – 2016</span></div>
-                <ul class="exp-list">
-                    <li>Configured parameter-based setups and managed automation for the US Health & Welfare domain (Benefits, COBRA, HSA/FSA).</li>
-                </ul>
-            </div>
+        <div class="agent-card">
+            <h3>Claude Debug Agents</h3>
+            <p>Automated triage + debugging integrated with Slack.</p>
         </div>
-    </section>
 
-    <!-- The Comprehensive Tech Stack -->
-    <section id="stack" class="section-container bg-navy text-paper">
-        <h2 class="section-title text-accent">Technical Arsenal</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Languages & AI Tools</h4>
-                <p>Python (Primary), Core Java, Bash. n8n, Cursor, GitHub Copilot, Claude (Haiku/Sonnet), GPT-4, Gemini. Bilingual communication (English/Hindi).</p>
-            </div>
-            <div class="skill-category">
-                <h4>Automation & Performance</h4>
-                <p>Pytest, Playwright, Selenium, Block Framework, BDD Cucumber, JUnit, TestNG. REST (requests, Rest Assured), gRPC (grpcio). K6, Jmeter.</p>
-            </div>
-            <div class="skill-category">
-                <h4>Cloud & Architecture</h4>
-                <p>GCP, AWS, Docker, Kubernetes, Jenkins, Buildkite, Argo, Nginx, HAProxy. Microservices, VM Servers.</p>
-            </div>
-            <div class="skill-category">
-                <h4>Databases & Caching</h4>
-                <p>MySQL, Bigtable, DB2, Redis, MongoDB, Aerospike (Cache, Master-Slave, Circular Replication).</p>
-            </div>
-            <div class="skill-category">
-                <h4>Monitoring & Messaging</h4>
-                <p>Kibana, DataDog, Chronosphere, Report Portal, Allure, Kafka, RabbitMQ, Vault, Postman, Charles, DBeaver.</p>
-            </div>
+        <div class="agent-card">
+            <h3>Cost Optimization</h3>
+            <p>Reduced LLM cost by switching Sonnet → Haiku.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 | Staff QA Engineer | Resident of Bhwarganj, Biaora, Rajgarh (M.P.)</p>
-        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 10px;">Interests: Personal Finance & Stock Markets, Energy Efficiency Tech, Motorcycling, Swimming.</p>
-    </footer>
+<!-- INFRA -->
+<section id="infra" class="section-container fade-in">
+    <h2 class="section-title">Infrastructure & CI/CD</h2>
+
+    <div class="infra-grid">
+        <div class="infra-item">
+            <h4>Buildkite Automation</h4>
+            <p>Real-time failure detection and rerun optimization.</p>
+        </div>
+
+        <div class="infra-item">
+            <h4>Argo Workflow Optimization</h4>
+            <p>Removed redundant deployments to improve release cycles.</p>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section-container bg-white fade-in">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="time-header">
+                <h3>Staff QA Engineer</h3>
+                <span class="company">Bluecore | 2022–Present</span>
+            </div>
+            <ul class="exp-list">
+                <li>Automation using Python & Playwright</li>
+                <li>GCP systems validation</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <div class="time-header">
+                <h3>Senior QA Lead</h3>
+                <span class="company">Paytm | 2017–2022</span>
+            </div>
+            <ul class="exp-list">
+                <li>Payment systems & UPI automation</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- STACK -->
+<section id="stack" class="section-container bg-navy text-paper fade-in">
+    <h2 class="section-title text-accent">Tech Stack</h2>
+
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h4>Languages</h4>
+            <p>Python, Java, Bash</p>
+        </div>
+
+        <div class="skill-category">
+            <h4>Automation</h4>
+            <p>Pytest, Playwright, Selenium</p>
+        </div>
+
+        <div class="skill-category">
+            <h4>Cloud</h4>
+            <p>AWS, GCP, Docker, Kubernetes</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section-container fade-in">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>AI Failure Triage Agent</h3>
+            <p>Reduced manual debugging by 60% using Claude + Slack.</p>
+            <a href="#" target="_blank">View Project →</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Coverage Intelligence Tool</h3>
+            <p>Automated repo coverage tracking system.</p>
+            <a href="#" target="_blank">View Project →</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Dipendra Choudhary</p>
+</footer>
+
+<!-- SCROLL ANIMATION -->
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            el.classList.add('visible');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
