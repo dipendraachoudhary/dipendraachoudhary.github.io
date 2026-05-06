@@ -3,175 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dipendra Choudhary | Staff QA Engineer Portfolio</title>
+    <title>Dipendra Choudhary | Staff QA Engineer & AI Specialist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .skill-badge { @apply bg-slate-800 border border-slate-700 px-3 py-1 rounded text-xs text-blue-300; }
-        .experience-card { @apply border-l-2 border-blue-600 pl-6 pb-10 relative; }
-        .experience-card::before { content: ''; @apply absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full; }
+        .skill-badge { @apply bg-blue-900/20 border border-blue-800/50 px-3 py-1 rounded text-xs text-blue-400 font-medium; }
+        .nav-link { @apply hover:text-blue-500 transition-colors cursor-pointer; }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-200 font-sans selection:bg-blue-500 selection:text-white">
+<body class="bg-[#0f172a] text-slate-300 font-sans selection:bg-blue-500 selection:text-white">
 
-    <!-- NAVIGATION & CONTACT BAR -->
-    <nav class="sticky top-0 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 z-50">
-        <div class="container mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
-            <span class="text-xl font-bold tracking-tighter text-blue-500">DIPENDRA CHOUDHARY</span>
-            <div class="flex gap-4 text-sm font-medium">
-                <a href="tel:+918517001700" class="hover:text-blue-400"><i class="fas fa-phone mr-2"></i>+91 8517001700</a>
-                <a href="mailto:dipendra.choudhary047@gmail.com" class="hover:text-blue-400"><i class="fas fa-envelope mr-2"></i>Email</a>
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 w-full bg-[#0f172a]/80 backdrop-blur-md border-b border-slate-800 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold text-white tracking-tight">DC<span class="text-blue-500">.</span></span>
+            <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#tech" class="nav-link">Stack</a>
+                <a href="https://www.linkedin.com/in/dipendra-choudhary-9a9b5859/" class="text-blue-500 hover:underline">LinkedIn</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header class="container mx-auto px-6 py-24">
+    <!-- HERO / ABOUT -->
+    <section id="about" class="container mx-auto px-6 pt-32 pb-20">
         <div class="max-w-4xl">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Staff QA Engineer <br><span class="text-blue-500">& AI Automator.</span></h1>
-            <p class="text-xl text-slate-400 mb-8 leading-relaxed">
-                Results-driven Lead QA Engineer with 10+ years of expertise in test automation, execution, and scalable QA solutions. Currently leveraging AI-powered tools (Claude, Gemini, Cursor) to accelerate quality delivery at **Bluecore Technologies**.
+            <h2 class="text-blue-500 font-mono mb-4">Hello, my name is</h2>
+            <h1 class="text-6xl md:text-8xl font-extrabold text-white mb-6">Dipendra Choudhary.</h1>
+            <h3 class="text-4xl md:text-6xl font-bold text-slate-500 mb-8 leading-tight">I build scalable quality through AI-native automation.</h3>
+            <p class="text-xl max-w-2xl leading-relaxed mb-10">
+                With over a decade of experience, I specialize in architecting test automation frameworks and leading high-performing teams. Currently, I am a **Staff QA Engineer** at **Bluecore**, where I blend deep backend expertise with cutting-edge AI agents to solve complex quality challenges.
             </p>
-            <div class="flex flex-wrap gap-3">
-                <span class="skill-badge">US Healthcare</span>
-                <span class="skill-badge">E-commerce</span>
-                <span class="skill-badge">Fintech (NPCI/UPI/Wallet)</span>
-                <span class="skill-badge">IoT/POS Systems</span>
-                <span class="skill-badge">MarTech</span>
-                <span class="skill-badge">Public APIs</span>
-            </div>
-        </div>
-    </header>
-
-    <!-- AI & INNOVATION HUB -->
-    <section class="bg-slate-800/50 py-20 border-y border-slate-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 flex items-center"><i class="fas fa-microchip mr-4 text-blue-500"></i>GenAI & Custom Automation</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700">
-                    <h3 class="text-xl font-bold mb-4 text-blue-400">Agentic QA</h3>
-                    <p class="text-slate-400 text-sm">Developed Claude-based agents to automate daily tasks, specifically running failed test cases on local environments automatically.</p>
-                </div>
-                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700">
-                    <h3 class="text-xl font-bold mb-4 text-purple-400">Self-Healing Workflows</h3>
-                    <p class="text-slate-400 text-sm">Created **n8n workflows** to identify failing test cases from historical runs and generate automated fixes using LLMs.</p>
-                </div>
-                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700">
-                    <h3 class="text-xl font-bold mb-4 text-green-400">AI Stack</h3>
-                    <p class="text-slate-400 text-sm">Expert implementation of Cursor, GitHub Copilot, GPT-4, and Gemini for test case generation, PR reviews, and log analysis.</p>
-                </div>
+            <div class="flex gap-6">
+                <a href="mailto:dipendra.choudhary047@gmail.com" class="px-8 py-4 border-2 border-blue-500 text-blue-500 font-bold rounded hover:bg-blue-500/10 transition">Get In Touch</a>
+                <a href="https://github.com/dipendraachoudhary" class="px-8 py-4 bg-blue-600 text-white font-bold rounded hover:bg-blue-700 transition">View GitHub</a>
             </div>
         </div>
     </section>
 
-    <!-- WORK EXPERIENCE -->
-    <section class="container mx-auto px-6 py-24">
-        <h2 class="text-3xl font-bold mb-16">Professional Journey</h2>
+    <!-- EXPERIENCE (LINKEDIN OPTIMIZED) -->
+    <section id="experience" class="container mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+            <span class="text-blue-500 font-mono mr-4 text-xl">01.</span> Professional Experience
+        </h2>
         
-        <div class="max-w-4xl mx-auto">
+        <div class="space-y-12 max-w-4xl">
             <!-- Bluecore -->
-            <div class="experience-card">
-                <div class="flex flex-wrap justify-between items-baseline mb-4">
-                    <h3 class="text-2xl font-bold text-white">Staff QA Engineer | Bluecore</h3>
-                    <span class="text-blue-500 font-mono">MARCH 2022 — PRESENT</span>
-                </div>
-                <ul class="space-y-3 text-slate-400 text-sm list-disc ml-5">
-                    <li>Lead and mentor a high-performing QA team across functional, API (HTTP & gRPC), and UI automation.</li>
-                    <li>Integrated AI/ML tools for log parsing and intelligent defect triaging, significantly reducing manual effort[cite: 1].</li>
-                    <li>Managed GCP infrastructure (BigQuery, Datastore, Buckets) and integrated workflows with Lambda Test and Selenium Grid[cite: 1].</li>
-                    <li>Led monolith-to-microservices migration testing with zero critical defects[cite: 1].</li>
+            <div class="group relative pl-8 border-l border-slate-700">
+                <div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[6.5px] top-2 group-hover:scale-150 transition-transform"></div>
+                <h3 class="text-2xl font-bold text-white">Staff QA Engineer <span class="text-blue-500">@ Bluecore</span></h3>
+                <p class="font-mono text-sm mb-4 italic">March 2022 — Present | Remote (India)</p>
+                <ul class="space-y-3 text-slate-400 list-disc ml-5">
+                    <li>Drive technical strategy for end-to-end quality in a complex microservices ecosystem.</li>
+                    <li>Developed autonomous AI agents using **Claude** and **n8n** to handle local recovery of failed test suites.</li>
+                    <li>Expertise in managing **GCP Cloud Infrastructure** for large-scale data and performance validation.</li>
                 </ul>
             </div>
 
-            <!-- Paytm Lead -->
-            <div class="experience-card">
-                <div class="flex flex-wrap justify-between items-baseline mb-4">
-                    <h3 class="text-2xl font-bold text-white">QA Lead Engineer | Paytm</h3>
-                    <span class="text-blue-500 font-mono">JUNE 2021 — MARCH 2022</span>
-                </div>
-                <p class="text-slate-400 text-sm mb-4">Specialized in EDC (POS) payments ecosystem including Issuer bank interaction and complex application flows[cite: 1].</p>
+            <!-- Paytm -->
+            <div class="group relative pl-8 border-l border-slate-700">
+                <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-2 group-hover:bg-blue-500 transition-colors"></div>
+                <h3 class="text-2xl font-bold text-white">QA Lead & Sr. Engineer <span class="text-blue-500">@ Paytm</span></h3>
+                <p class="font-mono text-sm mb-4 italic">Nov 2017 — March 2022 | Noida, India</p>
+                <p class="text-slate-400 mb-4">Led high-impact quality initiatives for Paytm's core payment gateway and offline POS (EDC) systems. Managed complex integrations with Issuer banks and handled large-scale UPI transaction flows.</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="skill-badge">Docker</span> <span class="skill-badge">Nginx</span> <span class="skill-badge">Postman</span> <span class="skill-badge">Jenkins</span>[cite: 1]
+                    <span class="skill-badge">Fintech</span><span class="skill-badge">UPI</span><span class="skill-badge">Payment Gateway</span><span class="skill-badge">Scale</span>
                 </div>
             </div>
 
-            <!-- Paytm Sr -->
-            <div class="experience-card">
-                <div class="flex flex-wrap justify-between items-baseline mb-4">
-                    <h3 class="text-2xl font-bold text-white">Sr. QA Engineer | Paytm</h3>
-                    <span class="text-blue-500 font-mono">NOV 2017 — MAY 2021</span>
-                </div>
-                <ul class="space-y-2 text-slate-400 text-sm list-disc ml-5">
-                    <li>Automated deployment processes via Bash scripting and managed QA server setups[cite: 1].</li>
-                    <li>Conducted deep backend testing for fund loss prevention and production root cause analysis[cite: 1].</li>
-                </ul>
-            </div>
-
-            <!-- Aon Hewitt -->
-            <div class="experience-card">
-                <div class="flex flex-wrap justify-between items-baseline mb-4">
-                    <h3 class="text-2xl font-bold text-white">QA Engineer | Aon Hewitt</h3>
-                    <span class="text-blue-500 font-mono">JUNE 2014 — DEC 2016</span>
-                </div>
-                <p class="text-slate-400 text-sm">Quality control for US-based Health & Welfare benefit plan configurations, web setups, and payroll interfaces[cite: 1].</p>
+            <!-- Early Career -->
+            <div class="group relative pl-8 border-l border-slate-700">
+                <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-2 group-hover:bg-blue-500 transition-colors"></div>
+                <h3 class="text-xl font-bold text-white">QA Engineer <span class="text-blue-500">@ Aon Hewitt</span></h3>
+                <p class="font-mono text-sm mb-2">2014 — 2016</p>
+                <p class="text-slate-400">Validated US Health & Welfare benefits software, focusing on premium billing and data integrity.</p>
             </div>
         </div>
     </section>
 
-    <!-- SKILL MATRIX -->
-    <section class="bg-slate-800/30 py-24">
+    <!-- TECH STACK MATRIX -->
+    <section id="tech" class="bg-slate-800/30 py-20 border-y border-slate-800">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-16 text-center">Technical Matrix[cite: 1]</h2>
-            <div class="grid md:grid-cols-4 gap-12">
+            <h2 class="text-3xl font-bold text-white mb-12">Technical Arsenal</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div>
-                    <h4 class="text-blue-500 font-bold mb-6 tracking-widest uppercase text-xs">Languages & Frameworks</h4>
-                    <ul class="space-y-2 text-sm text-slate-400">
-                        <li>Python, Core Java, Bash</li>
-                        <li>Selenium, Playwright</li>
-                        <li>Pytest, JUnit, TestNG</li>
-                        <li>Cucumber BDD, Block Framework</li>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest text-blue-500">Languages</h4>
+                    <ul class="text-sm space-y-2">
+                        <li>Python (Advanced)</li>
+                        <li>Core Java</li>
+                        <li>Bash Scripting</li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-blue-500 font-bold mb-6 tracking-widest uppercase text-xs">Cloud & DB</h4>
-                    <ul class="space-y-2 text-sm text-slate-400">
-                        <li>GCP (BigQuery, Spanner, Firestore)</li>
-                        <li>AWS, Docker, Kubernetes</li>
-                        <li>MySQL, Redis, MongoDB</li>
-                        <li>Kafka, RabbitMQ</li>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest text-blue-500">Automation</h4>
+                    <ul class="text-sm space-y-2">
+                        <li>Playwright / Selenium</li>
+                        <li>Pytest / TestNG</li>
+                        <li>gRPC / Rest Assured</li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-blue-500 font-bold mb-6 tracking-widest uppercase text-xs">Tools & Monitoring</h4>
-                    <ul class="space-y-2 text-sm text-slate-400">
-                        <li>Kibana, Datadog, Chronosphere</li>
-                        <li>K6, JMeter (Performance)</li>
-                        <li>Charles Proxy, Fiddler, Postman</li>
-                        <li>Buildkite, Argo, Jenkins</li>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest text-blue-500">AI & Workflow</h4>
+                    <ul class="text-sm space-y-2">
+                        <li>Claude / Gemini / GPT-4</li>
+                        <li>Cursor / GitHub Copilot</li>
+                        <li>n8n Automation</li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-blue-500 font-bold mb-6 tracking-widest uppercase text-xs">Education</h4>
-                    <div class="text-sm">
-                        <p class="font-bold text-slate-200">BE in CSE</p>
-                        <p class="text-slate-400">RGPV University | CGPA: 7.60</p>
-                        <p class="font-bold text-slate-200 mt-4">Intermediate (Maths)</p>
-                        <p class="text-slate-400">I.P.S BIAORA | CGPA: 7.4</p>
-                    </div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest text-blue-500">Infrastructure</h4>
+                    <ul class="text-sm space-y-2">
+                        <li>GCP (BigQuery/Spanner)</li>
+                        <li>Docker / Kubernetes</li>
+                        <li>Jenkins / Buildkite</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="container mx-auto px-6 py-12 border-t border-slate-800 flex flex-wrap justify-between items-center text-slate-500 text-xs">
-        <div>
-            <p>© 2026 Dipendra Choudhary. STAFF QA ENGINEER[cite: 1]</p>
-            <p>Bhwarganj, Biaora, Madhya Pradesh[cite: 1]</p>
-        </div>
-        <div class="flex gap-6 mt-4 md:mt-0">
-            <span>Interests: Motorcycling, Travel, Swimming[cite: 1]</span>
-        </div>
+    <footer class="container mx-auto px-6 py-12 text-center text-slate-500 text-xs">
+        <p>Built with ❤️ and AI | Based in Bhwarganj, Madhya Pradesh</p>
+        <p class="mt-2">© 2026 Dipendra Choudhary</p>
     </footer>
 
 </body>
