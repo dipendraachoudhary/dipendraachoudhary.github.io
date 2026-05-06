@@ -3,130 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dipendra Choudhary | Staff QA Engineer & AI Specialist</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .skill-badge { @apply bg-blue-900/20 border border-blue-800/50 px-3 py-1 rounded text-xs text-blue-400 font-medium; }
-        .nav-link { @apply hover:text-blue-500 transition-colors cursor-pointer; }
-    </style>
+    <title>SDET & Quality Architect | Python & Automation</title>
+    <!-- Fonts: Playfair for Executive headings, DM Sans for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#0f172a] text-slate-300 font-sans selection:bg-blue-500 selection:text-white">
+<body>
 
-    <!-- NAVIGATION -->
-    <nav class="fixed top-0 w-full bg-[#0f172a]/80 backdrop-blur-md border-b border-slate-800 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold text-white tracking-tight">DC<span class="text-blue-500">.</span></span>
-            <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#tech" class="nav-link">Stack</a>
-                <a href="https://www.linkedin.com/in/dipendra-choudhary-9a9b5859/" class="text-blue-500 hover:underline">LinkedIn</a>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <span class="logo">SDET_LEAD</span>
+            <div class="links">
+                <a href="#experience">Experience</a>
+                <a href="#stack">Tech Stack</a>
+                <a href="#philosophy">Philosophy</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO / ABOUT -->
-    <section id="about" class="container mx-auto px-6 pt-32 pb-20">
-        <div class="max-w-4xl">
-            <h2 class="text-blue-500 font-mono mb-4">Hello, my name is</h2>
-            <h1 class="text-6xl md:text-8xl font-extrabold text-white mb-6">Dipendra Choudhary.</h1>
-            <h3 class="text-4xl md:text-6xl font-bold text-slate-500 mb-8 leading-tight">I build scalable quality through AI-native automation.</h3>
-            <p class="text-xl max-w-2xl leading-relaxed mb-10">
-                With over a decade of experience, I specialize in architecting test automation frameworks and leading high-performing teams. Currently, I am a **Staff QA Engineer** at **Bluecore**, where I blend deep backend expertise with cutting-edge AI agents to solve complex quality challenges.
-            </p>
-            <div class="flex gap-6">
-                <a href="mailto:dipendra.choudhary047@gmail.com" class="px-8 py-4 border-2 border-blue-500 text-blue-500 font-bold rounded hover:bg-blue-500/10 transition">Get In Touch</a>
-                <a href="https://github.com/dipendraachoudhary" class="px-8 py-4 bg-blue-600 text-white font-bold rounded hover:bg-blue-700 transition">View GitHub</a>
-            </div>
+    <!-- Hero Section -->
+    <header class="hero">
+        <span class="eyebrow">Quality Engineering Leadership</span>
+        <h1>Engineering <span>Reliability</span> <br>at Enterprise Scale.</h1>
+        <p>Lead SDET specializing in Python-based automation frameworks, API contract validation, and AI-augmented testing workflows.</p>
+    </header>
+
+    <!-- Impact Grid -->
+    <section class="impact-grid">
+        <div class="impact-card">
+            <h3>Python & PyTest</h3>
+            <p>Architecting scalable, data-driven automation suites for complex backend systems.</p>
+        </div>
+        <div class="impact-card">
+            <h3>API Integrity</h3>
+            <p>Deep validation of Java-based services, OkHttp implementations, and JSON schemas[cite: 1].</p>
+        </div>
+        <div class="impact-card">
+            <h3>AI-Native QA</h3>
+            <p>Pioneering high-velocity test generation using Cursor IDE and GitHub Copilot[cite: 1].</p>
         </div>
     </section>
 
-    <!-- EXPERIENCE (LINKEDIN OPTIMIZED) -->
-    <section id="experience" class="container mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
-            <span class="text-blue-500 font-mono mr-4 text-xl">01.</span> Professional Experience
-        </h2>
-        
-        <div class="space-y-12 max-w-4xl">
-            <!-- Bluecore -->
-            <div class="group relative pl-8 border-l border-slate-700">
-                <div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[6.5px] top-2 group-hover:scale-150 transition-transform"></div>
-                <h3 class="text-2xl font-bold text-white">Staff QA Engineer <span class="text-blue-500">@ Bluecore</span></h3>
-                <p class="font-mono text-sm mb-4 italic">March 2022 — Present | Remote (India)</p>
-                <ul class="space-y-3 text-slate-400 list-disc ml-5">
-                    <li>Drive technical strategy for end-to-end quality in a complex microservices ecosystem.</li>
-                    <li>Developed autonomous AI agents using **Claude** and **n8n** to handle local recovery of failed test suites.</li>
-                    <li>Expertise in managing **GCP Cloud Infrastructure** for large-scale data and performance validation.</li>
-                </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="section-container">
+        <h2 class="section-title">Strategic Quality Advocacy</h2>
+        <div class="experience-card">
+            <div class="role-header">
+                <h3>Lead Quality Advocate</h3>
+                <span class="company">Insider One</span>
             </div>
-
-            <!-- Paytm -->
-            <div class="group relative pl-8 border-l border-slate-700">
-                <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-2 group-hover:bg-blue-500 transition-colors"></div>
-                <h3 class="text-2xl font-bold text-white">QA Lead & Sr. Engineer <span class="text-blue-500">@ Paytm</span></h3>
-                <p class="font-mono text-sm mb-4 italic">Nov 2017 — March 2022 | Noida, India</p>
-                <p class="text-slate-400 mb-4">Led high-impact quality initiatives for Paytm's core payment gateway and offline POS (EDC) systems. Managed complex integrations with Issuer banks and handled large-scale UPI transaction flows.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="skill-badge">Fintech</span><span class="skill-badge">UPI</span><span class="skill-badge">Payment Gateway</span><span class="skill-badge">Scale</span>
-                </div>
-            </div>
-
-            <!-- Early Career -->
-            <div class="group relative pl-8 border-l border-slate-700">
-                <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-2 group-hover:bg-blue-500 transition-colors"></div>
-                <h3 class="text-xl font-bold text-white">QA Engineer <span class="text-blue-500">@ Aon Hewitt</span></h3>
-                <p class="font-mono text-sm mb-2">2014 — 2016</p>
-                <p class="text-slate-400">Validated US Health & Welfare benefits software, focusing on premium billing and data integrity.</p>
-            </div>
+            <ul class="experience-list">
+                <li>Established robust automation ecosystems using <strong>Python</strong> and <strong>PyTest</strong> to maintain 99.9% system uptime[cite: 1].</li>
+                <li>Directed technical due diligence during organizational acquisitions to ensure system stability and continuity[cite: 1].</li>
+                <li>Leveraged <strong>AI-native tools</strong> like Cursor and Copilot to accelerate test script development and discovery of edge cases[cite: 1].</li>
+                <li>Mentored engineering teams through technical advocacy, focusing on automation-first cultures and leadership growth[cite: 1].</li>
+            </ul>
         </div>
     </section>
 
-    <!-- TECH STACK MATRIX -->
-    <section id="tech" class="bg-slate-800/30 py-20 border-y border-slate-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-white mb-12">Technical Arsenal</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div>
-                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest text-blue-500">Languages</h4>
-                    <ul class="text-sm space-y-2">
-                        <li>Python (Advanced)</li>
-                        <li>Core Java</li>
-                        <li>Bash Scripting</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest text-blue-500">Automation</h4>
-                    <ul class="text-sm space-y-2">
-                        <li>Playwright / Selenium</li>
-                        <li>Pytest / TestNG</li>
-                        <li>gRPC / Rest Assured</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest text-blue-500">AI & Workflow</h4>
-                    <ul class="text-sm space-y-2">
-                        <li>Claude / Gemini / GPT-4</li>
-                        <li>Cursor / GitHub Copilot</li>
-                        <li>n8n Automation</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest text-blue-500">Infrastructure</h4>
-                    <ul class="text-sm space-y-2">
-                        <li>GCP (BigQuery/Spanner)</li>
-                        <li>Docker / Kubernetes</li>
-                        <li>Jenkins / Buildkite</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="container mx-auto px-6 py-12 text-center text-slate-500 text-xs">
-        <p>Built with ❤️ and AI | Based in Bhwarganj, Madhya Pradesh</p>
-        <p class="mt-2">© 2026 Dipendra Choudhary</p>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 | Resident of Bhwarganj, Madhya Pradesh[cite: 1].</p>
     </footer>
 
 </body>
