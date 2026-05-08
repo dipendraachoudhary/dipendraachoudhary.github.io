@@ -18,7 +18,7 @@
 
 <body>
 
-    <nav class="glass-nav">
+    <!-- <nav class="glass-nav">
         <div class="nav-content">
             <div class="logo">
     <span>Dipendra.</span>
@@ -32,7 +32,27 @@
                 <a href="#contact">Contact</a>
             </div>
         </div>
-    </nav>
+    </nav> -->
+
+    <nav class="glass-nav">
+  <div class="nav-content">
+    <a href="#top" class="nav-brand">
+      <div class="nav-avatar">DC</div>
+      <div class="nav-identity">
+        <span class="nav-name">Dipendra Choudhary</span>
+      </div>
+    </a>
+
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#agentic">Agentic QA</a>
+      <a href="#infra">Infra & DevOps</a>
+      <a href="#experience">Journey</a>
+      <a href="#stack">Technical Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
 
 <header class="hero">
 
@@ -92,7 +112,7 @@
 
         <div class="profile-ring">
 
-            <img src="Gemini_Generated_Image_8cjlct8cjlct8cjl.png" alt="Dipendra">
+            <img src="image.png" alt="Dipendra">
 
         </div>
 
@@ -104,7 +124,7 @@
 
 </header>
 
-    <section id="about" class="section-container about-section-dark">
+    <section id="about" class="section-container about-section-dark reveal">
         <h2 class="section-title text-accent">About Me</h2>
 
         <div class="about-grid">
@@ -171,7 +191,7 @@
         </div>
     </section>
 
-    <section id="agentic" class="section-container bg-navy text-paper">
+    <section id="agentic" class="section-container bg-navy text-paper reveal">
         <h2 class="section-title text-accent">Agentic QA & n8n Orchestration</h2>
         <div class="agent-grid">
             <div class="agent-card">
@@ -196,7 +216,7 @@
         </div>
     </section>
 
-<section id="architecture" class="section-container architecture-section">
+<section id="architecture" class="section-container architecture-section reveal">
 
     <div class="architecture-header">
 
@@ -430,7 +450,7 @@
 
 </section>
 
-<section id="experience" class="section-container bg-white">
+<section id="experience" class="section-container bg-white reveal">
         <h2 class="section-title">Professional Narrative</h2>
 <div class="timeline">
 
@@ -500,7 +520,7 @@
         </div>
     </section>
 
-    <section id="infra" class="section-container bg-light-gray"> <h2 class="section-title">Infrastructure & CI/CD Strategy</h2>
+    <section id="infra" class="section-container bg-light-gray reveal"> <h2 class="section-title">Infrastructure & CI/CD Strategy</h2>
         <div class="infra-grid">
             <div class="infra-item">
                 <h4>Proactive Buildkite Integration</h4>
@@ -513,7 +533,7 @@
         </div>
     </section>
 
-    <section id="education" class="section-container bg-white">
+    <section id="education" class="section-container bg-white reveal">
         <h2 class="section-title">Academic Foundation</h2>
         <div class="edu-grid">
             
@@ -544,7 +564,7 @@
         </div>
     </section>
 
-    <section id="stack" class="section-container bg-arsenal-light">
+    <section id="stack" class="section-container bg-arsenal-light reveal">
         <h2 class="section-title">Technical Arsenal</h2>
 
         <div class="skills-grid">
@@ -584,7 +604,7 @@
         </div>
     </section>
 
- <section id="contact" class="section-container contact-premium">
+ <section id="contact" class="section-container contact-premium reveal">
         <div class="contact-header">
             <span class="contact-eyebrow">Get In Touch</span>
 
@@ -629,6 +649,29 @@
     <footer>
         <p>© 2026 Dipendra Choudhary</p>
     </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const reveals = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+
+  reveals.forEach((el) => observer.observe(el));
+
+});
+</script>
 
 </body>
 
